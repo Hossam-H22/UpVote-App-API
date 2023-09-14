@@ -167,9 +167,9 @@ The project structure follows a modular pattern to enhance maintainability and r
 <a id="Available_Base_Url"></a>
 
 ## Available Base Url
-- https://upvote-app-api.vercel.app/
-- https://upvote-app-api-dragon-h22.vercel.app/
-- https://upvote-app-api-git-master-dragon-h22.vercel.app/
+- https://up-vote-app-api.vercel.app/
+- https://up-vote-app-api-dragon-h22.vercel.app/
+- https://up-vote-app-api-git-master-dragon-h22.vercel.app/
 
 
 

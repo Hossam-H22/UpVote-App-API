@@ -21,7 +21,7 @@ const initApp = (app, express) => {
     app.use("/uploads", express.static(fullPath));
 
     // App Routing
-    app.get('/', (req, res)=> resjson({ message: "Welcome to Up Vote API !" }));
+    app.get('/', (req, res)=> res.json({ message: "Welcome to Up Vote API !" }));
     app.use("/user", userRouter);
     app.use("/auth", authRouter);
     app.use("/post", postRouter);
