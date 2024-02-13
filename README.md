@@ -3,8 +3,6 @@
 The Up Vote API is a Node.js application built with Express and MongoDB, providing the backend services for a simple voting and commenting system. This API allows users to register, create posts, comment on posts, and vote on posts and comments. Additionally, it integrates with Cloudinary for handling image uploads.
 
 
-
-
 <br>
 
 
@@ -45,7 +43,7 @@ The Saraha API project provides the backend services for a simple voting and com
 ## Features
 
 - User registration and authentication.
-- Add posts, comments, and reply on comments.
+- Add posts, and comments, and reply to comments.
 - Input validation using Joi.
 - Password hashing with Bcryptjs.
 - Seamless media uploads using Cloudinary.
@@ -136,24 +134,24 @@ The project structure follows a modular pattern to enhance maintainability and r
   * `GET /user/profile`: Retrieve details of a profile user.
   * `GET /user/:id/`: Retrieve details of a specific profile user to share it.
   * `PATCH /user/update`: Update general user date.
-  * `PATCH /user/password`: Update password of the user.
-  * `PATCH /user/profilePic`: Upload profile image of user.
-  * `PATCH /user/profileCovPic`: Upload cover images for user profile with maximum 5 images.
+  * `PATCH /user/password`: Update the password of the user.
+  * `PATCH /user/profilePic`: Upload the profile image of the user.
+  * `PATCH /user/profileCovPic`: Upload cover images for the user profile with a maximum of 5 images.
 * **Posts**
   * `GET /post`: Retrieve all posts.
-  * `POST /post`: Create post.
+  * `POST /post`: Create a post.
   * `PATCH /post/:postId`: Update specific post by id.
   * `PATCH /post/:postId/like`: Add like to specific post by id.
   * `PATCH /post/:postId/unlike`: Remove like from specific post id.
   * `DELETE /post/:postId`: Delete specific post by id.
 * **Comments**
   * `GET /post/comment`: Retrieve all comments.
-  * `POST /post/:postId/comment`: Create comment on specific post by his id.
-  * `POST /post/:postId/comment/:commentId/reply`: Create reply on specific commnet by his id.
+  * `POST /post/:postId/comment`: Create a comment on a specific post by his id.
+  * `POST /post/:postId/comment/:commentId/reply`: Create a reply on a specific comment by his id.
   * `POST /post/:postId/comment/:commentId`: update specific comment data by his id.
   * `PATCH /post/comment/:commentId/like`: Add like to specific comment by id.
   * `PATCH /post/comment/:commentId/unlike`: Remove like from specific comment by id.
-  * `DELETE /post/comment/:commentId`: Delete specific comment by id.
+  * `DELETE /post/comment/:commentId`: Delete the specific comment by id.
 
 
 > Detailed Postman API documentation can be found <a href="https://documenter.getpostman.com/view/23533987/2s9YC5xBwU" target="_blank">here</a>.
@@ -193,7 +191,7 @@ User passwords are securely hashed using Bcryptjs before being stored in the dat
 <a id="Validation"></a>
 
 ## Validation
-Joi is used to validate incoming data for user registration, login, posts, and comments sending. This ensures that only valid data is processed by the API.
+Joi is used to validate incoming data for user registration, login, posts, and comment sending. This ensures that only valid data is processed by the API.
 
 
 
